@@ -15,7 +15,7 @@
     System.out.println();
  }
 }*/
-    void main() {
+   /* void main() {
         int[][] attendence = {
                 {0, 1, 0},
                 {1, 0, 0},
@@ -36,5 +36,29 @@
             }
             System.out.println();
         }
-    }
+    }*/
+
+void main() {
+    System.out.println(add(2, 7));
+    System.out.println(subraction(10, 8));
+    System.out.println(multiplaction(20, 12));
+    System.out.println(divison(15, 6));
+}
+public int add (int a,int b){
+    return a+b;
+}
+public int subraction(int a,int b) {
+    return a - b;
+}
+
+
+public int multiplaction(int a,int b) {
+    return a * b;
+}
+
+public int divison(int a,int b) {
+    return a % b;
+}
+
+
 

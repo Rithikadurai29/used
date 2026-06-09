@@ -7,9 +7,8 @@ void main (){
         for(int column = 1;column <=row;column++) {
             System.out.print(column);
         }
-        System.out.println(
-*/
-void main () {
+        System.out.pri
+/*void main () {
             int[] marks = {87, 32, 44, 89, 23};
             System.out.print("pass marks :");
             for (int i = 0; i < marks.length; i++) {
@@ -24,5 +23,11 @@ void main () {
                 if (marks[i] < 40) {
                     System.out.print(marks[i] + " ,");
                 }
-            }
-        }
+            }*/
+
+
+void main (){
+      int a=02,b=10;
+      System.out.println(a+b);
+  }
+
