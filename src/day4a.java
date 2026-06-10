@@ -1,5 +1,4 @@
-public class day4a{
-    void main(){
+void main(){
         //int[] marks = new int[5][3];
         int[][] studentmarks = {
                 {78,90,34},
