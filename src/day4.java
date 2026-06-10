@@ -1,4 +1,4 @@
-/*void main() {
+*zz/*void main() {
     //int[] marks = new int[5];
     int[][] marks = new int[5][5];
     int[][] studentMarks = {
@@ -37,7 +37,6 @@
             System.out.println();
         }
     }*/
-
 void main() {
     System.out.println(add(2, 7));
     System.out.println(subraction(10, 8));
@@ -50,6 +49,7 @@ public int add (int a,int b){
 public int subraction(int a,int b) {
     return a - b;
 }
+
 
 
 public int multiplaction(int a,int b) {
