@@ -118,7 +118,7 @@ public class Day6_part {
 
         Student s1 = new Student();
 
-        s1.StudentInfo("ASHMITHA", 2526105);
+        s1.StudentInfo("RITHIKA", 2526105);
         s1.information("rithika", 2526105, "AI%DS");
 
         s1.StudentMarks(90);
