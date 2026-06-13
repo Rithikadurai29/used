@@ -97,7 +97,7 @@
 }/*
 
    */
- public class Day9asses{
+ /*public class Day9asses{
     interface Employee {
 
         String solveProblem();
@@ -136,7 +136,7 @@
     class CheckingEmployee implements Employee {
         @Override
         public String solveProblem() {
-            System.out.println("Problem Solved...");
+            System.out.println("Problem Solved.");
             return "Problem Solved";
         }
 
@@ -150,6 +150,19 @@
         BankEmployee bankEmployee = new BankEmployee("AKSHAYA","4567",40000);
         bankEmployee.solveProblem();
         bankEmployee.work();
+    }
+}/*
+
+  */
+public class day9 {
+    record Valueaddedcourse(String name, String dept) {
+
+    }
+
+    static void main() {
+        Valueaddedcourse valueaddedcourse = new Valueaddedcourse("Rithika", "BSC (AI&DS)");
+        System.out.println(valueaddedcourse.name());
+        System.out.println(valueaddedcourse.dept());
     }
 }
 
