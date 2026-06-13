@@ -1,5 +1,5 @@
 
-public class Day7 {
+/*public class Day8 {
      class Request {
         private String name;
         private String date;
@@ -32,17 +32,16 @@ public class Day7 {
             super(name, date, reason);
         }
 
-        void applyLeave() {
-            System.out.println("Leave Request");
-        }
-    }
-
-    static class OnDutyRequest extends Request {
-        OnDutyRequest(String name, String date, String reason) {
-            super(name, date, reason);
-        }
-
-        void applyOnDuty() {
+        void applyLj         System.out.println("Leave Request");
+  /      }
+ /   }
+/
+    /static class OnDutyRequest extends Request {
+   /     OnDutyRequest(String name, String date, String reason) {
+  /          super(name, date, reason);
+ /       }
+/
+        voi"d applyOnDuty() {
             System.out.println("On-Duty Request");
         }
     }
@@ -60,8 +59,97 @@ public class Day7 {
                 "Rithika",
                 "15-06-2026",
                 "College Seminar");
-        onDuty.applyOnDuty();
+          onDuty.applyOnDuty();
         onDuty.displayDetails();
-        onDuty.reject();
+        onDuty.reject;
+    }-+*
+}
+ */
+  /*public class Day8{
+    class Payment {
+        void transfer(double amount) {
+            System.out.println("Processing payment" + amount);
+        }
+    }
+    class UPIPayment extends Payment {
+        void transfer(double amount) {
+            System.out.println("UPI Payment: " + amount);
+        }
+    }
+    class CardPayment extends Payment {
+        void transfer(double amount) {
+            System.out.println("Card Payment: " + amount);
+        }
+    }
+    class NBPayment extends Payment {
+        void transfer(double amount) {
+            System.out.println("Net Banking Payment: " + amount);
+        }
+    }
+    public void main(String[] args) {
+        UPIPayment upi = new UPIPayment();
+        upi.transfer(5000);
+        CardPayment card = new CardPayment();
+        card.transfer(2500);
+        NBPayment nb = new NBPayment();
+       nb.transfer(10000);
+   }
+}/*
+
+   */
+ public class Day9asses{
+    interface Employee {
+
+        String solveProblem();
+
+        String work();
+    }
+    static class BankEmployee implements Employee {
+        String name;
+        String id;
+        int salary;
+
+        BankEmployee(String name, String id, int salary) {
+            this.name = name;
+            this.id = id;
+            this.salary = salary;
+        }
+
+        @Override
+        public String solveProblem() {
+            System.out.println("Problem Solved...");
+            return "Problem Solved";
+        }
+
+        @Override
+        public String work() {
+            System.out.println("Work Finished");
+            return "Work Finished";
+        }
+
+        void display() {
+            System.out.println("Name:" + "name");
+            System.out.println("ID:" + "id");
+            System.out.println("Salary:" + "salary");
+        }
+    }
+    class CheckingEmployee implements Employee {
+        @Override
+        public String solveProblem() {
+            System.out.println("Problem Solved...");
+            return "Problem Solved";
+        }
+
+        public String work() {
+            System.out.println("Work Finished");
+            return "Work Finished";
+        }
+    }
+
+    public static void main(String[] args) {
+        BankEmployee bankEmployee = new BankEmployee("AKSHAYA","4567",40000);
+        bankEmployee.solveProblem();
+        bankEmployee.work();
     }
 }
+

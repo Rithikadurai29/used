@@ -1,4 +1,4 @@
-*zz/*void main() {
+/*void *main() {
     //int[] marks = new int[5];
     int[][] marks = new int[5][5];
     int[][] studentMarks = {

@@ -22,11 +22,7 @@ void main (){
             for (int i = 0; i < marks.length; i++) {
                 if (marks[i] < 40) {
                     System.out.print(marks[i] + " ,");
-                }
-            }*/
-
-
-void main (){
+             oid main (){
       int a=02,b=10;
       System.out.println(a+b);
   }
