@@ -154,7 +154,7 @@
 }/*
 
   */
-public class day9 {
+/*public class day9 {
     record Valueaddedcourse(String name, String dept) {
 
     }
@@ -163,6 +163,24 @@ public class day9 {
         Valueaddedcourse valueaddedcourse = new Valueaddedcourse("Rithika", "BSC (AI&DS)");
         System.out.println(valueaddedcourse.name());
         System.out.println(valueaddedcourse.dept());
-    }
-}
+    }/*
+ */
+     enum LANGUAGES{
+        EN("English"),
+        GR("German"),
+        JP("Japanese"),
+        TA("Tamil");
 
+    String description;
+
+    LANGUAGES (String description){
+        this.description = description;
+
+}
+}
+      static void main() {
+         System.out.println( LANGUAGES.EN.description);
+          System.out.println( LANGUAGES.GR.description);
+          System.out.println( LANGUAGES.JP.description);
+          System.out.println( LANGUAGES.TA.description);
+}
