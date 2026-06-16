@@ -1,4 +1,4 @@
-
+/*
 /*public class Day8 {
      class Request {
         private String name;
@@ -187,7 +187,7 @@
 
      */
 
-             public class day8 {
+             /*public class day8 {
 
 // login
 
@@ -215,6 +215,204 @@ sealed interface LoginResult permits LoginSuccess, LoginFailure, LoginLoading {
         static void handleLogin(LoginResult result) {
             switch (result) {
                 case LoginSuccess success -> System.out.println("Login Success at : " + success.time());
+
+/*
+
+             */
+public class Day9{
+    static class College implements AutoClose{
+        college(){
+            System.out.println("college Opens");
+        }
+        @Override
+        public void close() throws Exception {
+            System.out.println("College Closed");
+        }
+    }
+    static class Department extend College{
+        Department(){
+            System.out.println("CT Have opened");
+        }
+        @Override
+        public void close() throws Exception {
+            System.out.println("CT Has Closed");
+        }
+    }
+    static class Year extends Department{
+        Department(){
+            System.out.println("I-Year Have opened");
+        }
+        @Override
+        public void close() throws Exception {
+            System.out.println("I-Year Has Closed");
+        }
+    }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 case LoginFailure failure -> System.out.println("Login Failure because of " + failure.reason());
                 case LoginLoading loading -> System.out.println("Login Loading, " + loading.expectedTime());
             }
