@@ -1,4 +1,4 @@
- public class day10_ {
+ /*public class day10_ {
      static void main() {
          String name = null;
          try {
@@ -20,7 +20,12 @@
 
      }
 
- }
+ }/*
+
+  */
+
+   public  class day10_ {
+}
 
 
 
