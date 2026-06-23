@@ -1,60 +1,51 @@
 
-     public class day14 {
-          static class Student {
-              String name;
-              int regNo;
-              int age;
-              String dept;
+public class day14 {
+    static class Student {
+        String name;
+        String dept;
+        int age;
 
-
-          }
-
-          static class Builder {
-              private String name;
-              private int age;
-              private int regNo;
-              private String dept;
-
-
-              public Builder name(String nameValue) {
-                  this.name = nameValue;
-                  return this;
-              }
-
-              public Builder age(int ageValue) {
-                  this.age = ageValue;
-                  return this;
-              }
-
-              public Builder regNo(int regNoValue) {
-                  this.regNo = regNoValue;
-                  return this;
-              }
-
-              public Builder dept(String deptValue) {
-                  this.dept = deptValue;
-                  return this;
-              }
-
-              public Student build() {
-                  return new Student(this);
-
-
-              }
-          }
-
-
-
-        static  void main(){
-            Student student = new Student.Builder()
-                    .name("RITHIKA")
-                    .age(18)
-                    .regNo(2342343)
-                    .dept("AI&DS")
-                    .build();
-            System.out.println(Student.name);
+        Student(Builder builder) {
+            this.name = builder.name;
+            this.dept = builder.dept;
+            this.age = builder.age;
         }
+        static class Builder {
+            private String name;
+            private String dept;
+            private int age;
 
+            public Builder name(String nameValue) {
+                this.name = nameValue;
+                return this;
+            }
+
+            public Builder dept(String deptValue) {
+                this.dept = deptValue;
+                return this;
+            }
+
+            public Builder age(int ageValue) {
+                this.age = ageValue;
+                return this;
+            }
+
+            public Student build() {
+                return new Student(this);
+            }
+        }
+    }
+
+    static void main() {
+        Student student = new Student.Builder()
+                .name("Rithika")
+                .dept("AI&DS")
+                .age(18)
+                .build();
+
+        System.out.println(student.name);
+    }
+}
 
 
 
