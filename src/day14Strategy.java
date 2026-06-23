@@ -1,23 +1,3 @@
-public class Day14Strategy {
-
-    public static void main(String[] args) {
-        // Initialize Fee Calculator with No Discount
-        FeeCalculator calc = new FeeCalculator(new NoDiscount());
-
-        System.out.println("Final Fee with No Discount: " + calc.finalFee(1000));
-
-        // Change strategy at runtime
-        calc.setDiscountStrategy(new SummerSaleDiscount());
-
-        System.out.println("Final Fee with SummerSale Discount: " + calc.finalFee(1000));
-    }
-}
-
-interface DiscountStrategy {
-    double apply(double fee);
-}
-
-class SummerSaleDiscount implements DiscountStrategy {
 
     @Override
     public double apply(double fee) {
